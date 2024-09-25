@@ -4,7 +4,13 @@ string parameter and returns the value from the object at the key of the string
 passed in.
 */
 
-// Your code here 
+let variableAsKey = (obj, str,) => {
+for (let key in obj) {
+  if (key === str){
+return obj[key]
+  }
+}
+}
 
 // Example:
 // const obj = {

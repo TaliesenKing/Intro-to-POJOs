@@ -4,7 +4,17 @@ strings. It should return true if all of the strings in the array are keys in
 the object.
 */
 
-// Your code here 
+let hasKeys = (obj, arr) => {
+for (let i = 0; i < arr.length; i++) {
+  let el = arr[i];
+  if (obj[el] === undefined) {
+    return false;
+  }
+  
+} 
+return true;
+
+}
 
 // let survey = {
 //   name: 'Check',
